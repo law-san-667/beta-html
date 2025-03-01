@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- font family roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beta Consulting - Blockchain & Investissement</title>
+  <meta name="description" content="Beta Consulting accompagne les entreprises en Afrique, notamment au Sénégal et au Bénin, dans l'adoption des technologies blockchain et l'investissement en cryptomonnaies." />
+  <meta name="keywords" content="blockchain, investissement, cryptomonnaies, Sénégal, Bénin, transformation numérique" />
+  <meta name="author" content="Beta Consulting" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <!-- Desktop Navigation -->
+  <nav id="desktop-nav">
+    <img class="logo" src="assets/logo.png"></img> 
+
+    <div class="menu-center">
+      <ul class="nav-links">
+        <li><a href="#about">Accueil</a></li>
+        <li><a href="#experience">Qui sommes nous ?</a></li>
+        <li><a href="#projects">Nos services</a></li>
+        <li><a href="#contact">Notre équipe</a></li>
+        <li><a href="#contact">Nous contacter</a></li>
+      </ul>
+          <!-- Language selection dropdown for desktop view -->
+    <!-- <div class="language-selector">
+      <select id="language-select" onchange="switchLanguage()">
+        <option value="en">🇬🇧 </option>
+        <option value="fr">🇫🇷 </option>
+      </select>
+    </div> -->
+    </div>
+    <button class="btn btn-color-0" onclick="location.href='./#contact'">
+        <span data-lang="en">Rejoignez - nous</span>
+        <span data-lang="fr" style="display: none;">Rejoignez - nous</span>
+      </button>
+  </nav>
+
+  <!-- Mobile Navigation (Hamburger Menu) -->
+  <nav id="hamburger-nav">
+    <div class="logo">Law-Portfolio</div>
+    <div class="hamburger-menu menu-right">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- Mobile menu links -->
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+        <!-- Language selection dropdown for desktop view -->
+        <!-- <div class="language-selector">
+          <select id="language-select" onchange="switchLanguage()">
+            <option value="en">🇬🇧 </option>
+            <option value="fr">🇫🇷 </option>
+          </select>
+        </div> -->
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/landing-image.png" alt="Lawal profile picture" class="profile-pic" />
+    </div>
+    <div class="section__text">
+      <p id="home-title">Objectif</p>
+      <p id="home-text">
+        Redynamisez votre transformation numérique et digitale. Ensemble, démocratisons la blockchain, le Web3 et les monnaies numériques pour un écosystème plus inclusif, durable et transparent
+      </p>
+      <button class="btn btn-color-0" id="learn-more" onclick="location.href='./#contact'">
+        <span data-lang="en">En savoir plus</span>
+        <span data-lang="fr" style="display: none;">En savoir plus</span>
+      </button>
+      <!-- row with three stats-->
+      <div class="stats-container">
+        <div class="stat">
+          <h3>+100</h3>
+          <p>Particuliers formés</p>
+        </div>
+        <div class="stat">
+          <h3>+30</h3>
+          <p>Ateliers de formation et séminaires réalisés</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="partners">
+    <h1 class="title" data-lang="en">Nos partenaires</h1>
+    <div class="section-container">
+      <p>
+        Insérér ici liste de partenaires...
+      </p>
+    </div>
+  </section>
+  <section id="who-are-we">
+    <h1 class="title" data-lang="en">Qui sommes nous ?</h1>
+    <div class="waw-details-container">
+      <!-- row -->
+       <div class="waw-left">
+        <!-- column -->
+        <div class="waw-column">
+          <div>
+            <img class="waw-sub-title" src="assets/Users.png"></img>
+            <p data-lang="fr">
+              <span>Beta Consulting</span> est une entreprise SAS ayant pour mission de 
+              vulgariser la blockchain, le Web3 et les monnaies numériques, en accompagnant les entreprises et le grand public dans leur adoption 
+              de ces technologies. L’objectif est de créer un écosystème numérique sécurisé, inclusif et innovant, en collaborant avec les autorités compétentes. À travers des services de conseil, de gestion de 
+              portefeuille et des formations.
+              <br><br>  
+              Nous aspirons à stimuler l’innovation, l’inclusion financière et 
+              l’économie circulaire. Cet engagement se lie directement aux 
+              ODD 8 (Travail décent et croissance économique), 9 (Industrie, 
+              innovation et infrastructure) et 10 (Réduction des inégalités), 
+              en visant une société plus équitable et un développement durable.
+            </p>
+          </div>
+          <br>
+        <img  src="assets/styled-line.png" alt=""/>
+       </div>
+       </div>
+        <img class="waw-right" src="assets/waw-image.png" alt=""/>
+    </div>
+  </section>
+  <section id="services">
+    <h1 class="title" data-lang="fr">Nos services</h1>
+    <div class="services-wrapper">
+      <ul class="services-timeline" >
+        <li>
+            <!-- <div class="service-item-index">
+              1
+            </div> -->
+            <div data-index="1" class="service-item odd">
+              <div class="service-item-row">
+                <img src="assets/poll.png" alt="" srcset="">
+                <div class="service-item-text-column" >
+                  <h3>Séminaires et formations pratiques</h3>
+                  <p>Nous organisons des séminaires et des formations pratiques destinés aux personnels des banques, des entreprises ou aux particuliers. Ces sessions permettent de comprendre en...</p>
+                  <button class="btn btn-color-0" id="learn-more" onclick="location.href='./#contact'">
+                    <span data-lang="en">En savoir plus</span>
+                    <span data-lang="fr" style="display: none;">En savoir plus</span>
+                  </button>          
+                </div>
+              </div>
+              <img src="assets/large-styled-line.png" alt="">
+            </div>
+        </li>
+        <li>
+          <div data-index="2" class="service-item even">
+            <div class="service-item-row">
+              <div class="service-item-text-column" >
+                <h3>Accompagnement et conseils pour votre transfotmation numérique</h3>
+                <p>Nous fournissons des orientations stratégiques pour aider les entreprises et organisations à réussir leur transition vers la
+                  blockchain. Nous analysons vos besoins spécifiques et....</p>
+                <button class="btn btn-color-0" id="learn-more" onclick="location.href='./#contact'">
+                  <span data-lang="en">En savoir plus</span>
+                  <span data-lang="fr" style="display: none;">En savoir plus</span>
+                </button>          
+              </div>
+              <img src="assets/Share.png" alt="" srcset="">
+            </div>
+            <img src="assets/large-styled-line.png" alt="">
+          </div>
+        </li>
+        <li>
+          <div data-index="3" class="service-item odd">
+            <div class="service-item-row">
+              <img src="assets/Chart_Mixed.png" alt="" srcset="">
+              <div class="service-item-text-column" >
+                <h3>Intégration, implémentation et conception de solutions blockchain</h3>
+                <p>Nous accompagnons les entreprises dans l’intégration et la mise en place de systèmes basés sur la blockchain, adaptés à divers secteurs tels que la finance, l’egouvernance...</p>
+                <button class="btn btn-color-0" id="learn-more" onclick="location.href='./#contact'">
+                  <span data-lang="en">En savoir plus</span>
+                  <span data-lang="fr" style="display: none;">En savoir plus</span>
+                </button>          
+              </div>
+            </div>
+            <img src="assets/large-styled-line.png" alt="">
+          </div>
+        </li>
+        <li>
+          <div data-index="4" class="service-item even">
+            <div class="service-item-row">
+              <div class="service-item-text-column" >
+                <h3>Accompagnement pour la levée de fonds via la blockchain</h3>
+                <p>Nous aidons les entreprises et startups à lever des fonds en utilisant les technologies blockchain, en particulier à travers des méthodes innovantes comme les ICO (Initial Coin Offering) ou les STO (Security Token Offering)...</p>
+                <button class="btn btn-color-0" id="learn-more" onclick="location.href='./#contact'">
+                  <span data-lang="en">En savoir plus</span>
+                  <span data-lang="fr" style="display: none;">En savoir plus</span>
+                </button>          
+              </div>
+              <img src="assets/Money_Bag.png" alt="" srcset="">
+            </div>
+            <img src="assets/large-styled-line.png" alt="">
+          </div>
+        </li>
+        <li>
+          <div data-index="5" class="service-item odd">
+            <div class="service-item-row">
+              <img src="assets/Shield-Money.png" alt="" srcset="">
+              <div class="service-item-text-column" >
+                <h3>Gestion de portefeuille et investissement dans les actifs numériques</h3>
+                <p>Nous offrons des services de gestion de portefeuille spécialisés dans les actifs numériques, vous aidant à optimiser vos investissements dans les cryptomonnaies, les tokens et...</p>
+                <button class="btn btn-color-0" id="learn-more" onclick="location.href='./#contact'">
+                  <span data-lang="en">En savoir plus</span>
+                  <span data-lang="fr" style="display: none;">En savoir plus</span>
+                </button>          
+              </div>
+            </div>
+            <img src="assets/large-styled-line.png" alt="">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="contact">
+    <p class="section__text__p1" data-lang="en">Get in Touch</p>
+    <p class="section__text__p1" data-lang="fr" style="display: none;">Contactez-moi</p>
+    <h1 class="title" data-lang="en">Contact Me</h1>
+    <h1 class="title" data-lang="fr" style="display: none;">Me Contacter</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:lawdanazoumi@gmail.com">lawdanazoumi@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/mouhamed-lawal-dan-azoumi-597975206/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Mouhamed Lawal DAN AZOUMI. All Rights Reserved.</p>
+  </footer>
+  <!-- Language Switch JavaScript -->
+<!-- Language Switch JavaScript -->
+<script>
+  function switchLanguage() {
+    const selectedLang = document.getElementById('language-select').value || document.getElementById('language-select-mobile').value;
+    const allElements = document.querySelectorAll('[data-lang]');
+
+    // Loop through all elements with data-lang attribute
+    allElements.forEach(el => {
+      // Display elements of selected language, hide others
+      if (el.getAttribute('data-lang') === selectedLang) {
+        el.style.display = '';
+      } else {
+        el.style.display = 'none';
+      }
+    });
+  }
+
+  function toggleMenu() {
+    const menu = document.querySelector('.menu-links');
+    menu.classList.toggle('open');
+  }
+</script>  <script src="script.js" ></script>
+</body>
+
+</html>
