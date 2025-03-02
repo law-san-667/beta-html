@@ -19,6 +19,134 @@ body {
 html {
   scroll-behavior: smooth;
 }
+/* ELEMENTS */
+
+p{
+  font-size: 1rem;
+  /* color third */
+  color: rgb(21, 59, 116);
+  font-weight: 100;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+  }
+  .btn-color-0 {
+    /* primaryColor */
+    border: rgb(0, 102, 255) 0.1rem solid;
+    /* Background white */
+    background: white;
+    /* Text color primaryColor */
+    color: rgb(0, 102, 255);
+    /* width adaptive to child */
+    width: fit-content;
+    /* text thin */
+    font-weight: 100;
+  }
+    
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.app-availability-info{
+  color: maroon;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+button:hover{
+  background-color: rgb(0, 102, 255);
+  color: white;
+  cursor: pointer;
+}
+
+svg{
+  height: 1.5rem;
+}
+
+
+.store-download-btn{
+/*<a class="flex w-fit items-center gap-1 rounded-lg border border-white bg-black p-2 hover:shadow-md" href="https://onelink.to/xj66az"><img alt="apple-logo" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" srcset="/_next/image?url=%2Ffooter%2Fapple.svg&amp;w=32&amp;q=75 1x, /_next/image?url=%2Ffooter%2Fapple.svg&amp;w=48&amp;q=75 2x" src="/_next/image?url=%2Ffooter%2Fapple.svg&amp;w=48&amp;q=75" style="color: transparent;"><p class="text-xs font-semibold text-white">App Store</p></a>*/
+  /* a tag has the class .store-download-btn */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem;
+  border: 0.1rem solid white;
+  background: black;
+  padding: 0.5rem;
+  transition: all 300ms ease;
+  text-decoration: none;
+  box-decoration-break: none;
+
+}
+
+.store-download-btn:hover {
+  cursor: pointer;
+  background: rgb(53, 53, 53);
+  text-decoration: none;
+  box-decoration-break: none;
+}
+
+.store-download-btn img {
+  width: 1.5rem;
+}
+
+.store-download-btn p {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+
 
 /* TRANSITION */
 
@@ -26,6 +154,8 @@ a,
 .btn {
   transition: all 300ms ease;
 }
+
+
 
 /* DESKTOP NAV */
 
@@ -36,35 +166,23 @@ nav,
 
 nav {
 /* margin horizontal */
-    margin: 0 7rem;
+  margin: 0 7rem;
   justify-content: space-between;
   align-items: center;
   height: 12vh;
 }
 
-.stat{
-  width: 13vw;
+/* .stat{
+  width: 15vw;
 }
+ */
 
-.stat p{
-  /* font weight light */
-  font-weight: 100;
-  font-size: 1.2rem;
-  color: rgb(0, 102, 255);
-  /* font-family: 'Roboto'; */
-}
-
-.stat h3 {
-  font-size: 2.8rem;
-  font-family: 'Anton', sans-serif;
-  color: rgb(0, 102, 255);
-}
-
+/* MOBILE NAV */
 
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 0.9vw;
 }
 
 a {
@@ -98,12 +216,17 @@ a {
   border: 1px solid #ccc;
 }
 
-a:hover {
+.nav-links li:hover{
+  cursor: pointer;
+  
+}
+
+/* a:hover {
   color: grey;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
-}
+  text-decoration-color: rgb(0, 102, 255);
+} */
 
 .logo {
   font-size: 2rem;
@@ -210,7 +333,23 @@ section {
   display: flex;
   
 }
+
+
 /* PROFILE SECTION */
+
+.stat p{
+  /* font weight light */
+  font-weight: 100;
+  font-size: 1rem;
+  color: rgb(0, 102, 255);
+  /* font-family: 'Roboto'; */
+}
+
+.stat h3 {
+  font-size: 2.8rem;
+  font-family: 'Anton', sans-serif;
+  color: rgb(0, 102, 255);
+}
 
 #profile {
   display: flex;
@@ -246,7 +385,7 @@ section {
   display: flex;
   flex-direction: row;
   margin: 4rem 5rem;
-  gap: 7rem;
+  gap: 3vw;
   margin-left: 2rem;
 }
 
@@ -254,11 +393,15 @@ section {
 /* color third */
 color: rgb(21, 59, 116);
 font-weight: 100;
-margin-bottom: 2rem;
+/* margin-bottom: 2rem; */
 font-size: 1.2vw;
 }
 
 .section__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   align-self: center; 
   text-align: flex-start;
   margin-left: 4rem;
@@ -271,7 +414,7 @@ font-size: 1.2vw;
 
 #learn-more{
     padding: 1rem 4rem;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 .section__text__p2 {
   font-size: 1.75rem;
@@ -292,115 +435,6 @@ font-size: 1.2vw;
   gap: 1rem;
 }
 
-/* ICONS */
-
-.icon {
-  cursor: pointer;
-  height: 2rem;
-}
-
-/* BUTTONS */
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.btn {
-  font-weight: 600;
-  transition: all 300ms ease;
-  padding: 1rem;
-  width: 8rem;
-  border-radius: 2rem;
-}
-
-.btn-color-1,
-.btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
-  }
-  .btn-color-0 {
-    /* primaryColor */
-    border: rgb(0, 102, 255) 0.1rem solid;
-    /* Background white */
-    background: white;
-    /* Text color primaryColor */
-    color: rgb(0, 102, 255);
-    /* width adaptive to child */
-    width: fit-content;
-    /* text thin */
-    font-weight: 100;
-  }
-    
-.btn-color-1:hover,
-.btn-color-2:hover {
-  cursor: pointer;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
-}
-
-.app-availability-info{
-  color: maroon;
-}
-
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
-}
-
-.btn-color-2 {
-  background: none;
-}
-
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-.btn-container {
-  gap: 1rem;
-}
-
-svg{
-  height: 1.5rem;
-}
-
-
-.store-download-btn{
-/*<a class="flex w-fit items-center gap-1 rounded-lg border border-white bg-black p-2 hover:shadow-md" href="https://onelink.to/xj66az"><img alt="apple-logo" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" srcset="/_next/image?url=%2Ffooter%2Fapple.svg&amp;w=32&amp;q=75 1x, /_next/image?url=%2Ffooter%2Fapple.svg&amp;w=48&amp;q=75 2x" src="/_next/image?url=%2Ffooter%2Fapple.svg&amp;w=48&amp;q=75" style="color: transparent;"><p class="text-xs font-semibold text-white">App Store</p></a>*/
-  /* a tag has the class .store-download-btn */
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  border-radius: 1rem;
-  border: 0.1rem solid white;
-  background: black;
-  padding: 0.5rem;
-  transition: all 300ms ease;
-  text-decoration: none;
-  box-decoration-break: none;
-
-}
-
-.store-download-btn:hover {
-  cursor: pointer;
-  background: rgb(53, 53, 53);
-  text-decoration: none;
-  box-decoration-break: none;
-}
-
-.store-download-btn img {
-  width: 1.5rem;
-}
-
-.store-download-btn p {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: white;
-}
 
 
 /* ABOUT SECTION */
@@ -550,25 +584,17 @@ article .icon {
   cursor: default;
 }
 
-/* PROJECTS SECTION */
+/* SERVICES SECTION */
 
 #services {
   position: relative;
-  height: 60vh;
+  /* height: 60vh; */
   margin: auto;
   margin-top: 10rem;
   width: 75%;
   padding-bottom: 4vh; 
 }
 
-#services p{
-  font-size: 1.2rem;
-  /* color third */
-  color: rgb(21, 59, 116);
-  font-weight: 100;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-}
 
 #services h3{
   /* color primary */
@@ -584,7 +610,7 @@ article .icon {
 .services-wrapper{
   width: 100%;
   display: flex;
-  transform: translateX(3vw);
+  /* transform: translateX(3vw); */
   justify-content: space-between;
 } 
 .services-timeline li{
@@ -599,21 +625,13 @@ article .icon {
   margin: 0;
 }
 
-.services-item-panel{
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 .services-timeline li:before{
   /* content is index */
   width: 25px;
   height: 25px;
   border-radius: 50%;
   background-color: rgb(0, 102, 255);
-  position: absolute;
+  /* position: absolute; */
   top: 18px;
   left: 50%;
   margin-left: -5%;
@@ -634,8 +652,7 @@ article .icon {
   margin-top: 7rem;
   display: flex;
   flex-direction: column;
-  width: 100%;
-
+  /* width: 100%; */
 }
 
 .service-item:before{
@@ -671,6 +688,10 @@ article .icon {
   justify-content: space-between;
   gap: 2rem;
   margin-bottom: 4rem;
+}
+
+.service-divider{
+  width: 100%;
 }
 
 .color-container {
@@ -710,24 +731,29 @@ article .icon {
   height: 60vh;
   margin: auto;
   margin-top: 10rem;
-  width: 75%;
+  width: 95%;
   padding-bottom: 4vh; 
 }
 
 .team-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   margin-top: 5vh;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
 .team-member {
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  max-width: 35vw;
+  /* margin: auto; */
   align-items: start;
-  gap: 1rem;
-  padding: 1vw 2vw;
+  /* gap: 1rem; */
+  padding: 1.5vw;
+  height: 16vh;
   /* border */
   /* border: 0.1rem solid rgb(163, 163, 163); */
   border-radius: 15px;
@@ -736,11 +762,22 @@ article .icon {
 }
 
 .team-member-row {
+  width: 100%;
+  height: 60%;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   justify-content: start;
   gap: 1rem;
+}
+
+/*  */
+.member-details{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:0;
+  justify-content: start;
 }
 
 .team-member img {
@@ -749,9 +786,9 @@ article .icon {
   height: 5vw;
 }
 
-.team-member h3 {
+.team-member h4 {
   color: rgb(0, 102, 255);
-  font-size: 1.2rem;
+  font-size: 1.3vw;
 }
 
 .team-member p {
@@ -781,7 +818,7 @@ article .icon {
   justify-content: center;
   gap: 2.5vw;
   margin: auto;
-  width: 65vh;
+  width: 80vh;
   padding: 4vw 2vw 2vw 7vw;
   /* border */
   /* border: 0.1rem solid rgb(163, 163, 163); */
