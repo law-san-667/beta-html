@@ -1,18 +1,53 @@
 /* MEDIA QUERIES FOR RESPONSIVE DESIGN */
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .mobile {
+    display: none;
+  }
+}
 
 /* TABLET DESIGN (max-width: 1024px) */
 @media screen and (max-width: 1024px) {
+  .desktop {
+    display: none;
+  }
+
+  .menu-links li{
+    font-size: 0.8rem;
+  }
+
+  .menu-links li:hover{
+    cursor: pointer;
+    color: rgb(0, 102, 255);
+  }
+
+  body {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+  }
+
+  p{
+    font-size: 3vw;
+  }
+  
   /* Navigation */
   #desktop-nav {
     display: none;
   }
 
+  .logo {
+    width: 15vw;
+  }
+
   #hamburger-nav {
+    margin: 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
-    height: 12vh;
+    padding: 0 1.5vw;
+    height: 8vh;
   }
 
   /* Profile section */
@@ -25,6 +60,11 @@
     margin-bottom: 5rem;
   }
 
+  .hamburger-icon{
+    width: 8vw;
+    height: 5vw;
+  }
+
   .section__pic-container {
     justify-content: center;
     width: 100%;
@@ -32,8 +72,8 @@
 
   .profile-pic {
     height: auto;
-    width: 60%;
-    max-width: 350px;
+    width: 40%;
+    /* max-width: 350px; */
   }
   
   .section__text {
@@ -44,17 +84,17 @@
     align-self: center; 
   }
 
-  #home-title {
-    font-size: 3rem;
+  .home-title {
+    font-size: 13vw;
   }
 
-  #home-text {
-    font-size: 1rem;
+  .home-text {
+    font-size: 2.7vw;
   }
 
   .stats-container {
     margin: 2rem auto;
-    gap: 2rem;
+    gap: 1vw;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -62,7 +102,7 @@
   /* Partners section */
   #partners {
     height: auto;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 0 1rem;
   }
 
   /* Who-are-we section */
@@ -77,6 +117,15 @@
     height: auto;
   }
 
+  .menu-right{
+    gap: 3vw;
+  }
+
+  .join-us{
+    font-size: 2.2vw;
+    padding: 2vw 3vw;
+  } 
+
   .waw-left {
     width: 90%;
     margin-bottom: 2rem;
@@ -88,61 +137,32 @@
     margin-bottom: 2rem;
   }
 
-  /* Services section */
-  #services {
-    width: 85%;
-    height: auto;
-    margin-top: 5rem;
-  }
-
-  .service-item-row {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-  }
-
-  .service-item-row img {
-    width: 25vw;
-    height: 25vw;
-  }
-
-  .service-item.even .service-item-row {
-    flex-direction: column-reverse;
-  }
-
-  .service-item-text-column {
-    text-align: center;
-  }
-
-  .services-timeline:before {
-    left: -5%;
-  }
-
-  .service-item:before {
-    left: -5%;
-  }
 
   /* Team section */
   #team {
     height: auto;
-    margin-top: 5rem;
-    padding-bottom: 2rem;
   }
 
   .team-container {
     justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   .team-member {
-    max-width: 45%;
-    height: auto;
+    max-width: 70%;
+    width: 80%;
+    display: flex;
     padding: 1rem;
   }
 
+  .team-member p{
+  }
+
   .team-member img {
-    width: 10vw;
-    height: 10vw;
+    width: 13vw;
+    height: 13vw;
   }
 
   .team-member h4 {
@@ -152,12 +172,23 @@
   /* Footer section */
   #footer {
     height: auto;
+    width: 90%;
+    padding-bottom: 1vh;
+    margin-bottom: 5vh;
+  }
+
+  #footer h3{
+    font-size: 2.7vw;
+  }
+
+  #footer p{
+    font-size: 1.95vw;
   }
 
   .footer-box {
     width: 90%;
     padding: 2rem;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 2rem;
   }
 
@@ -165,42 +196,74 @@
   .footer-column.right {
     width: 100%;
   }
+
+  .social-icons {
+    width: 100%;
+    justify-content: start;
+    gap: 0.5rem;
+  }
+
+  .social-icons svg{
+    width: 3vw;
+    height: 3vw;
+  }
 }
 
 /* MOBILE DESIGN (max-width: 767px) */
 @media screen and (max-width: 767px) {
   /* Profile section */
   #profile {
-    margin: 0 1rem;
+    width: 100%;
+    margin: 0;
     margin-bottom: 3rem;
   }
 
   .profile-pic {
-    width: 80%;
+    width: 65vw;
   }
 
   .section__text {
-    width: 90%;
-  }
-
-  #home-title {
-    font-size: 2.5rem;
-  }
-
-  .stats-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+
+  #learn-more{
+    font-size: 1.7vw;
+  }
+  
+
+  .stats-container {
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
     gap: 1.5rem;
   }
 
   .stat {
-    text-align: center;
-    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 30vw;
+    gap: 0rem;
+    justify-content: end;
   }
 
   .stat h3 {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
   }
+  .stat p {
+    font-size: 0.75rem;
+  }
+
+  .stat h3, .stat p {
+    margin: 0;
+    padding: 0;
+  }  
 
   /* Who-are-we section */
   #who-are-we {
@@ -221,61 +284,54 @@
     width: 90%;
   }
 
-  .services-wrapper {
-    width: 95%;
-  }
-
   .service-item-row img {
-    width: 35vw;
-    height: 35vw;
+    width: 13vw;
+    height: 13vw;
   }
 
-  .services-timeline:before {
-    display: none;
+  #services h3 {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
   }
-
-  .service-item:before {
-    position: static;
-    margin: 0 auto 1rem auto;
-    transform: none;
-    width: 40px;
-    height: 40px;
-    font-size: 1rem;
-  }
-
-  .service-item {
-    margin-top: 3rem;
+  #services p {
+    font-size: 0.6rem;
+    margin: 0.4rem 0 0.4rem 0;
   }
 
   /* Team section */
   .team-member {
-    max-width: 90%;
-    margin-bottom: 1rem;
-    padding: 1.5rem;
+    width: 85vw;
+    padding: 0.8rem 0.8rem 0 0.8rem;
   }
 
   .team-member-row {
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    gap: 0.4rem;
   }
 
   .member-details {
-    align-items: center;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
   }
 
   .team-member img {
-    width: 20vw;
-    height: 20vw;
+    width: 5vw;
+    height: 5vw;
   }
 
   .team-member h4 {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
+    margin: 0;
   }
 
   .team-member p {
-    font-size: 1rem;
+    font-size: 0.6rem;
+    margin: 0;
   }
 
   /* Footer section */
@@ -287,9 +343,15 @@
 
 /* SMALL MOBILE PHONES (max-width: 480px) */
 @media screen and (max-width: 480px) {
+
+  .desktop {
+    display: none;
+  }
   /* Global adjustments */
   .title {
-    font-size: 2rem;
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 0;
   }
 
   /* Profile section */
@@ -305,26 +367,55 @@
     font-size: 0.9rem;
   }
 
-  #learn-more {
-    padding: 0.8rem 2rem;
-    font-size: 0.9rem;
+  .btn{
+    font-size: 2vw;
+    padding: 1vw 3vw;
+  } 
+
+
+  .learn-more {
+    padding: 0.45rem 1.8rem;
+    font-size: 2vw;
     width: auto;
+  }
+
+  /* WHO ARE WE */
+
+  #who-are-we {
+    margin-top: 2rem;
+    width: 90%;
+    height: auto;
+  }
+
+  .waw-right{
+    margin-top: 2.5vh;
+    width: 100%;
+  }
+
+  .waw-users-image{
+    width: 12vh;
   }
 
   /* Services section */
   #services h3 {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+  }
+  #services p {
+    font-size: 0.6rem;
+    margin: 0.4rem 0 0.4rem 0;
   }
 
   .service-item-row img {
-    width: 45vw;
-    height: 45vw;
+    width: 13vw;
+    height: 13vw;
   }
 
   /* Team section */
   .team-member img {
-    width: 25vw;
-    height: 25vw;
+    width: 13vw;
+    height: 13vw;
   }
 
   /* Footer box */
