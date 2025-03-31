@@ -1,6 +1,6 @@
 #service-details {
     position: relative;
-    height: 60vh;
+    height: max-content;
     margin: auto;
     width: 100%;
     display: flex;
@@ -14,7 +14,7 @@
     /* color primary */
     color: rgb(0, 102, 255);
     /* font size 3rem */
-    font-size: 1.5rem;
+    font-size: 1rem;
     /* font family Anton SC*/
     font-family: "Anton", serif;
     font-weight: 400;
@@ -22,12 +22,12 @@
   }
   
 .service-img{
-    width: 65%;
+    width: 45%;
     height: 100%;
 }
 
 #icon{
-    width: 6rem;
+    width: 4rem;
 }
   
 .service-column{
@@ -35,7 +35,7 @@
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .service-main-row{
@@ -68,7 +68,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     width: 80%;
   }
   
@@ -85,7 +85,7 @@
   
   .service-details-item-text{
     width: 100%;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     /* color third */
     color: rgb(21, 59, 116);
     font-weight: 100;
@@ -109,6 +109,14 @@
     justify-content: center;
     position: absolute;
     flex-shrink: 0;
+  }
+
+  .service-column p {
+    font-size: 0.8rem;
+    color: rgb(21, 59, 116);
+    font-weight: 100;
+    font-family: "Roboto";
+    font-weight: 300;
   }
   
 
