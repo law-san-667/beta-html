@@ -4,40 +4,50 @@
 <head>
   <meta charset="UTF-8" />
   <!-- font family roboto -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta property="og:url" content="" id="assets/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BETA Consulting - Blockchain & Investissement</title>
   <meta property="og:image" content="assets/logo.png">
-  <meta name="description" content="BETA Consulting accompagne les entreprises en Afrique, notamment au Sénégal et au Bénin, dans l'adoption des technologies blockchain et l'investissement en cryptomonnaies." />
-  <meta name="keywords" content="blockchain, investissement, cryptomonnaies, Sénégal, Bénin, transformation numérique" />
+  <meta name="description"
+    content="BETA Consulting accompagne les entreprises en Afrique, notamment au Sénégal et au Bénin, dans l'adoption des technologies blockchain et l'investissement en cryptomonnaies." />
+  <meta name="keywords"
+    content="blockchain, investissement, cryptomonnaies, Sénégal, Bénin, transformation numérique" />
   <meta name="author" content="BETA Consulting" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/png" href="assets/logo.png">
-<link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 
 <body>
   <!-- Desktop Navigation -->
   <nav id="desktop-nav">
-    <img class="logo" src="assets/logo.png"></img> 
+    <img class="logo" src="assets/logo.png"></img>
 
     <div class="menu-center">
       <ul class="nav-links">
         <li><a href="#profile">Accueil</a></li>
         <li><a href="#who-are-we">Qui sommes nous ?</a></li>
-        <li><a href="#services">Nos services</a></li>
+        <li class="dropdown"><a href="#services">Nos services <img width="12" height="12" src="https://img.icons8.com/material-rounded/24/expand-arrow--v1.png" alt="expand-arrow--v1"/> </a> 
+          <div class="dropdown-content">
+            <a href="./services/service-seminaire.html">Séminaires et formations pratiques</a>
+            <a href="./services/service-advice.html">Accompagnement et conseils</a>
+            <a href="./services/service-integration.html">Intégration, implémentation </a>
+            <a href="./services/service-fellowship.html">Accompagnement pour la levée de fonds </a>
+            <a href="./services/service-wallet.html">Gestion de portefeuille et investissement </a>
+          </div>
+        </li>
         <li><a href="#team">Notre équipe</a></li>
         <li><a href="#footer">Nous contacter</a></li>
       </ul>
-          <!-- Language selection dropdown for desktop view -->
-    <!-- <div class="language-selector">
+      <!-- Language selection dropdown for desktop view -->
+      <!-- <div class="language-selector">
       <select id="language-select" onchange="switchLanguage()">
         <option value="en">🇬🇧 </option>
         <option value="fr">🇫🇷 </option>
@@ -45,29 +55,40 @@
     </div> -->
     </div>
     <button class="btn btn-color-0" onclick="location.href='./#contact'">
-        <span data-lang="en">Rejoignez - nous</span>
-        <span data-lang="fr" style="display: none;">Rejoignez - nous</span>
-      </button>
+      <span data-lang="en">Rejoignez - nous</span>
+      <span data-lang="fr" style="display: none;">Rejoignez - nous</span>
+    </button>
   </nav>
   <!-- Mobile Navigation (Hamburger Menu) -->
   <nav id="hamburger-nav">
-    <img class="logo" src="assets/logo.png"></img> 
+    <img class="logo" src="assets/logo.png"></img>
     <div class="hamburger-menu menu-right">
       <button class="btn btn-color-0 join-us" onclick="location.href='./#contact'">
         <span data-lang="en">Rejoignez - nous</span>
         <span data-lang="fr" style="display: none;">Rejoignez - nous</span>
       </button>
-      <svg xmlns="http://www.w3.org/2000/svg" onclick="toggleMenu()" class="hamburger-icon" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#0066ff" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>      </img>
+      <svg xmlns="http://www.w3.org/2000/svg" onclick="toggleMenu()" class="hamburger-icon"
+        viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+        <path fill="#0066ff"
+          d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+      </svg> </img>
       <!-- Mobile menu links -->
       <div class="menu-links">
         <li><a href="#profile">Accueil</a></li>
         <li><a href="#who-are-we">Qui sommes nous ?</a></li>
-        <li><a href="#services">Nos services</a></li>
+        <li class="dropdown"><a href="#services">Nos services <img width="12" height="12" src="https://img.icons8.com/material-rounded/24/expand-arrow--v1.png" alt="expand-arrow--v1"/> </a> 
+          <div class="dropdown-content">
+            <a href="./services/service-seminaire.html">Séminaires et formations pratiques</a>
+            <a href="./services/service-advice.html">Accompagnement et conseils</a>
+            <a href="./services/service-integration.html">Intégration, implémentation </a>
+            <a href="./services/service-fellowship.html">Accompagnement pour la levée de fonds </a>
+            <a href="./services/service-wallet.html">Gestion de portefeuille et investissement </a>
+          </div>
         <li><a href="#team">Notre équipe</a></li>
         <li><a href="#footer">Nous contacter</a></li>
       </div>
-        <!-- Language selection dropdown for desktop view -->
-        <!-- <div class="language-selector">
+      <!-- Language selection dropdown for desktop view -->
+      <!-- <div class="language-selector">
           <select id="language-select" onchange="switchLanguage()">
             <option value="en">🇬🇧 </option>
             <option value="fr">🇫🇷 </option>
@@ -82,9 +103,10 @@
     <div class="section__text">
       <h3 class="home-title">Objectif</h3>
       <p class="home-text">
-        Redynamisez votre transformation numérique et digitale. Ensemble, démocratisons la blockchain, le Web3 et les monnaies numériques pour un écosystème plus inclusif, durable et transparent
+        Redynamisez votre transformation numérique et digitale. Ensemble, démocratisons la blockchain, le Web3 et les
+        monnaies numériques pour un écosystème plus inclusif, durable et transparent
       </p>
-      <button class="btn btn-color-0 learn-more" onclick="location.href='./#contact'">
+      <button class="btn btn-color-0 learn-more" onclick="location.href='./#who-are-we'">
         <span data-lang="en">En savoir plus</span>
         <span data-lang="fr" style="display: none;">En savoir plus</span>
       </button>
@@ -117,90 +139,131 @@
     <h1 class="title" data-lang="en">Qui sommes nous ?</h1>
     <div class="waw-details-container desktop">
       <!-- row -->
-       <div class="waw-left">
+      <div class="waw-left">
         <!-- column -->
-          <div class="waw-column">
-            <div>
-              <img class="waw-sub-title" src="assets/Users.png"></img>
-              <p data-lang="fr">
-                <span>BETA Consulting</span> est une entreprise SAS ayant pour mission de 
-                vulgariser la blockchain, le Web3 et les monnaies numériques, en accompagnant les entreprises et le grand public dans leur adoption 
-                de ces technologies. L’objectif est de créer un écosystème numérique sécurisé, inclusif et innovant, en collaborant avec les autorités compétentes. À travers des services de conseil, de gestion de 
-                portefeuille et des formations.
-                <br><br>  
-                Nous aspirons à stimuler l’innovation, l’inclusion financière et 
-                l’économie circulaire. Cet engagement se lie directement aux 
-                ODD 8 (Travail décent et croissance économique), 9 (Industrie, 
-                innovation et infrastructure) et 10 (Réduction des inégalités), 
-                en visant une société plus équitable et un développement durable.
-              </p>
-            </div>
-            <br>
-          <img  src="assets/styled-line.png" class="divider" alt=""/>
+        <div class="waw-column">
+          <div>
+            <img class="waw-sub-title" src="assets/Users.png"></img>
+            <p data-lang="fr">
+              <span>BETA Consulting</span> est une entreprise SAS ayant pour mission de
+              vulgariser la blockchain, le Web3 et les monnaies numériques, en accompagnant les entreprises et le grand
+              public dans leur adoption
+              de ces technologies. L’objectif est de créer un écosystème numérique sécurisé, inclusif et innovant, en
+              collaborant avec les autorités compétentes. À travers des services de conseil, de gestion de
+              portefeuille et des formations.
+              <br><br>
+              Nous aspirons à stimuler l’innovation, l’inclusion financière et
+              l’économie circulaire. Cet engagement se lie directement aux
+              ODD 8 (Travail décent et croissance économique), 9 (Industrie,
+              innovation et infrastructure) et 10 (Réduction des inégalités),
+              en visant une société plus équitable et un développement durable.
+            </p>
           </div>
-       </div>
-        <img class="waw-right" src="assets/waw-image.png" alt=""/>
+          <br>
+          <img src="assets/styled-line.png" class="divider" alt="" />
+        </div>
+      </div>
+      <img class="waw-right" src="assets/waw-image.png" alt="" />
+    </div>
+    <div class="waw-details-container-2 desktop">
+      <!-- row -->
+      <img class="waw-right" src="assets/waw-2.png" alt="" />
+      <div class="waw-left">
+        <!-- column -->
+        <div class="waw-column waw-2">
+          <div>
+            <h3>La subversion des anciens modèles économiques par
+              les technologies de la blockchain ouvre la voie à la durabilité
+              l’inclusion et transparente.</h3>
+
+            <div class="waw-2-list-row">
+              <div class="waw-2-list-item">
+                <div class="waw-list-item-index-box">1</div>
+                <p class="waw-2-list-item-text">Réduction des couts et des délais opérationnels</p>
+              </div>
+              <div class="waw-2-list-item">
+                <div class="waw-list-item-index-box">2</div> 
+                <p class="waw-2-list-item-text">Automatisation et optimisation des processus</p>
+              </div>
+            </div>
+            <div class="waw-2-list-row">
+              <div class="waw-2-list-item">
+                <div class="waw-list-item-index-box">3</div>
+                <p class="waw-2-list-item-text">Durabilité, sécurité  et transparence de votre base de donnée</p>
+              </div>
+              <div class="waw-2-list-item">
+                <div class="waw-list-item-index-box">4</div>
+                <p class="waw-2-list-item-text">Innovation, digitalisation et modernisation de vos infrastructures</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="waw-details-container mobile">
       <!-- row -->
-      <img class="waw-right" src="assets/waw-image.png" alt=""/>
-       <div class="waw-left">
+      <img class="waw-right" src="assets/waw-image.png" alt="" />
+      <div class="waw-left">
         <!-- column -->
-          <div class="waw-column">
-            <div>
-              <img class="waw-users-image" src="assets/Users.png"></img>
-              <p data-lang="fr">
-                <span>BETA Consulting</span> est une entreprise SAS ayant pour mission de 
-                vulgariser la blockchain, le Web3 et les monnaies numériques, en accompagnant les entreprises et le grand public dans leur adoption 
-                de ces technologies. L’objectif est de créer un écosystème numérique sécurisé, inclusif et innovant, en collaborant avec les autorités compétentes. À travers des services de conseil, de gestion de 
-                portefeuille et des formations.
-                <br><br>  
-                Nous aspirons à stimuler l’innovation, l’inclusion financière et 
-                l’économie circulaire. Cet engagement se lie directement aux 
-                ODD 8 (Travail décent et croissance économique), 9 (Industrie, 
-                innovation et infrastructure) et 10 (Réduction des inégalités), 
-                en visant une société plus équitable et un développement durable.
-              </p>
-            </div>
-            <br>
+        <div class="waw-column">
+          <div>
+            <img class="waw-users-image" src="assets/Users.png"></img>
+            <p data-lang="fr">
+              <span>BETA Consulting</span> est une entreprise SAS ayant pour mission de
+              vulgariser la blockchain, le Web3 et les monnaies numériques, en accompagnant les entreprises et le grand
+              public dans leur adoption
+              de ces technologies. L’objectif est de créer un écosystème numérique sécurisé, inclusif et innovant, en
+              collaborant avec les autorités compétentes. À travers des services de conseil, de gestion de
+              portefeuille et des formations.
+              <br><br>
+              Nous aspirons à stimuler l’innovation, l’inclusion financière et
+              l’économie circulaire. Cet engagement se lie directement aux
+              ODD 8 (Travail décent et croissance économique), 9 (Industrie,
+              innovation et infrastructure) et 10 (Réduction des inégalités),
+              en visant une société plus équitable et un développement durable.
+            </p>
           </div>
-       </div>
+          <br>
+        </div>
+      </div>
     </div>
   </section>
   <section id="services">
     <h1 class="title" data-lang="fr">Nos services</h1>
     <div class="services-wrapper">
-      <ul class="services-timeline" >
+      <ul class="services-timeline">
         <li>
-            <!-- <div class="service-item-index">
+          <!-- <div class="service-item-index">
               1
             </div> -->
-            <div data-index="1" class="service-item odd">
-              <div class="service-item-row">
-                <img src="assets/poll.png" alt="" srcset="">
-                <div class="service-item-text-column" >
-                  <h3>Séminaires et formations pratiques</h3>
-                  <p>Nous organisons des séminaires et des formations pratiques destinés aux personnels des banques, des entreprises ou aux particuliers. Ces sessions permettent de comprendre en...</p>
-                  <button class="btn btn-color-0" id="learn-more" onclick="location.href='./#contact'">
-                    <span data-lang="en">En savoir plus</span>
-                    <span data-lang="fr" style="display: none;">En savoir plus</span>
-                  </button>          
-                </div>
+          <div data-index="1" class="service-item odd">
+            <div class="service-item-row">
+              <img src="assets/poll.png" alt="" srcset="">
+              <div class="service-item-text-column">
+                <h3>Séminaires et formations pratiques</h3>
+                <p>Nous organisons des séminaires et des formations pratiques destinés aux personnels des banques, des
+                  entreprises ou aux particuliers. Ces sessions permettent de comprendre en...</p>
+                <button class="btn btn-color-0" id="learn-more" onclick="location.href='./services/service-seminaire.html'">
+                  <span data-lang="en">En savoir plus</span>
+                  <span data-lang="fr" style="display: none;">En savoir plus</span>
+                </button>
               </div>
-              <img src="assets/large-styled-line.png" class="divider" alt="">
             </div>
+            <img src="assets/large-styled-line.png" class="divider" alt="">
+          </div>
         </li>
         <li>
           <div data-index="2" class="service-item even">
             <div class="service-item-row">
-              <div class="service-item-text-column" >
+              <div class="service-item-text-column">
                 <h3>Accompagnement et conseils pour votre transfotmation numérique</h3>
-                <p>Nous fournissons des orientations stratégiques pour aider les entreprises et organisations à réussir leur transition vers la
+                <p>Nous fournissons des orientations stratégiques pour aider les entreprises et organisations à réussir
+                  leur transition vers la
                   blockchain. Nous analysons vos besoins spécifiques et....</p>
-                <button class="btn btn-color-0" id="learn-more" onclick="location.href='./#contact'">
+                <button class="btn btn-color-0" id="learn-more" onclick="location.href='./services/service-advice.html'">
                   <span data-lang="en">En savoir plus</span>
                   <span data-lang="fr" style="display: none;">En savoir plus</span>
-                </button>          
+                </button>
               </div>
               <img src="assets/Share.png" alt="" srcset="">
             </div>
@@ -211,13 +274,14 @@
           <div data-index="3" class="service-item odd">
             <div class="service-item-row">
               <img src="assets/Chart_Mixed.png" alt="" srcset="">
-              <div class="service-item-text-column" >
+              <div class="service-item-text-column">
                 <h3>Intégration, implémentation et conception de solutions blockchain</h3>
-                <p>Nous accompagnons les entreprises dans l’intégration et la mise en place de systèmes basés sur la blockchain, adaptés à divers secteurs tels que la finance, l’egouvernance...</p>
-                <button class="btn btn-color-0" id="learn-more" onclick="location.href='./#contact'">
+                <p>Nous accompagnons les entreprises dans l’intégration et la mise en place de systèmes basés sur la
+                  blockchain, adaptés à divers secteurs tels que la finance, l’egouvernance...</p>
+                <button class="btn btn-color-0" id="learn-more" onclick="location.href='./services/service-integration.html'">
                   <span data-lang="en">En savoir plus</span>
                   <span data-lang="fr" style="display: none;">En savoir plus</span>
-                </button>          
+                </button>
               </div>
             </div>
             <img src="assets/large-styled-line.png" class="divider" alt="">
@@ -226,13 +290,15 @@
         <li>
           <div data-index="4" class="service-item even">
             <div class="service-item-row">
-              <div class="service-item-text-column" >
+              <div class="service-item-text-column">
                 <h3>Accompagnement pour la levée de fonds via la blockchain</h3>
-                <p>Nous aidons les entreprises et startups à lever des fonds en utilisant les technologies blockchain, en particulier à travers des méthodes innovantes comme les ICO (Initial Coin Offering) ou les STO (Security Token Offering)...</p>
-                <button class="btn btn-color-0" id="learn-more" onclick="location.href='./#contact'">
+                <p>Nous aidons les entreprises et startups à lever des fonds en utilisant les technologies blockchain,
+                  en particulier à travers des méthodes innovantes comme les ICO (Initial Coin Offering) ou les STO
+                  (Security Token Offering)...</p>
+                <button class="btn btn-color-0" id="learn-more" onclick="location.href='./services/service-fellowship.html'">
                   <span data-lang="en">En savoir plus</span>
                   <span data-lang="fr" style="display: none;">En savoir plus</span>
-                </button>          
+                </button>
               </div>
               <img src="assets/Money_Bag.png" alt="" srcset="">
             </div>
@@ -243,13 +309,14 @@
           <div data-index="5" class="service-item odd">
             <div class="service-item-row">
               <img src="assets/Shield-Money.png" alt="" srcset="">
-              <div class="service-item-text-column" >
+              <div class="service-item-text-column">
                 <h3>Gestion de portefeuille et investissement dans les actifs numériques</h3>
-                <p>Nous offrons des services de gestion de portefeuille spécialisés dans les actifs numériques, vous aidant à optimiser vos investissements dans les cryptomonnaies, les tokens et...</p>
-                <button class="btn btn-color-0" id="learn-more" onclick="location.href='./#contact'">
+                <p>Nous offrons des services de gestion de portefeuille spécialisés dans les actifs numériques, vous
+                  aidant à optimiser vos investissements dans les cryptomonnaies, les tokens et...</p>
+                <button class="btn btn-color-0" id="learn-more" onclick="location.href='./services/service-wallet.html'">
                   <span data-lang="en">En savoir plus</span>
                   <span data-lang="fr" style="display: none;">En savoir plus</span>
-                </button>          
+                </button>
               </div>
             </div>
             <img src="assets/large-styled-line.png" class="divider" alt="">
@@ -275,7 +342,7 @@
       </div>
       <div class="team-member">
         <div class="team-member-row">
-          <img src="assets/waw-image.png" alt="Team member 1" />
+          <img src="assets/mohamed-toure.jpeg" alt="Team member 1" />
           <div class="member-details">
             <h4>Mohamed Toure</h4>
             <p>CEO & Founder</p>
@@ -283,7 +350,7 @@
         </div>
         <p>Consultant en monnaies numériques et Blockchain</p>
       </div>
-    </div>    
+    </div>
     <div class="team-container">
       <div class="team-member">
         <div class="team-member-row">
@@ -300,21 +367,35 @@
   </section>
   <section id="footer">
     <div class="footer-box">
-        <div class="footer-column left">
-          <h3>BETA Consulting</h3>
-          <p><strong>BETA Consulting</strong> est une entreprise SAS ayant pour mission de vulgariser la blockchain, le Web3 et les monnaies numériques, en accompagnant les entreprises et le grand public dans leur adoption de ces technologies.</p>
+      <div class="footer-column left">
+        <h3>BETA Consulting</h3>
+        <p><strong>BETA Consulting</strong> est une entreprise SAS ayant pour mission de vulgariser la blockchain, le
+          Web3 et les monnaies numériques, en accompagnant les entreprises et le grand public dans leur adoption de ces
+          technologies.</p>
+      </div>
+      <div class="footer-column right">
+        <h3>Restons en contact</h3>
+        <p>+221 77 403 82 37</p>
+        <p> Adresse: Cité Mixta 11 LC</p>
+        <div class="social-icons">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path fill="#b01745"
+              d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path fill="#1152a6"
+              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+          </svg>
         </div>
-        <div class="footer-column right">
-          <h3>Restons en contact</h3>
-          <p>+221 77 403 82 37</p>
-          <p> Adresse: Cité Mixta 11 LC</p>
-          <div class="social-icons">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#b01745" d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>          
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#1152a6" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>          
-          </div>
-        </div>
-    </div>  
+      </div>
+    </div>
   </section>
   <!--
   <footer>  
@@ -322,28 +403,29 @@
   </footer> 
   -->
   <!-- Language Switch JavaScript -->
-<!-- Language Switch JavaScript -->
-<script>
-  function switchLanguage() {
-    const selectedLang = document.getElementById('language-select').value || document.getElementById('language-select-mobile').value;
-    const allElements = document.querySelectorAll('[data-lang]');
+  <!-- Language Switch JavaScript -->
+  <script>
+    function switchLanguage() {
+      const selectedLang = document.getElementById('language-select').value || document.getElementById('language-select-mobile').value;
+      const allElements = document.querySelectorAll('[data-lang]');
 
-    // Loop through all elements with data-lang attribute
-    allElements.forEach(el => {
-      // Display elements of selected language, hide others
-      if (el.getAttribute('data-lang') === selectedLang) {
-        el.style.display = '';
-      } else {
-        el.style.display = 'none';
-      }
-    });
-  }
+      // Loop through all elements with data-lang attribute
+      allElements.forEach(el => {
+        // Display elements of selected language, hide others
+        if (el.getAttribute('data-lang') === selectedLang) {
+          el.style.display = '';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+    }
 
-  function toggleMenu() {
-    const menu = document.querySelector('.menu-links');
-    menu.classList.toggle('open');
-  }
-</script>  <script src="script.js" ></script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu-links');
+      menu.classList.toggle('open');
+    }
+  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -181,6 +181,46 @@ nav {
   height: 12vh;
 }
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: max-content;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {  background-color: #f9f9f9;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  color: rgb(0, 102, 255);
+}
+
 /* .stat{
   width: 15vw;
 }
@@ -550,6 +590,10 @@ ul{
   margin: auto;
   margin-top: 10rem;
   width: 86%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
   /* padding: 6rem 15rem; */
 }
 
@@ -560,6 +604,16 @@ ul{
   justify-content: space-evenly;
   height: 100%;
   width: 100%;
+}
+
+.waw-details-container-2{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  height: 100%;
+  width: 90%;
 }
 
 
@@ -582,6 +636,71 @@ ul{
 .waw-right{
   width: 30%;
 }
+
+#who-are-we h3{
+  /* color primary */
+  color: rgb(0, 102, 255);
+  /* font size 3rem */
+  font-size: 1.5rem;
+  /* font family Anton SC*/
+  font-family: "Anton", serif;
+  font-weight: 400;
+  font-style: normal;
+  transform: translateX(-1.45rem);
+}
+
+.waw-2-list-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.waw-2-list-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  background-color: rgb(240, 246, 255);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem 0.5rem 0;
+}
+
+.waw-2-list-item-text{
+  width: 100%;
+  font-size: 0.9rem;
+  /* color third */
+  color: rgb(21, 59, 116);
+  font-weight: 100;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+
+.waw-list-item-index-box{
+  /* padding: 0.5rem 1rem; */
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  background-color: rgb(0, 102, 255);
+  color: white;
+  font-size: 1.3rem;
+  font-family: "Anton", sans-serif;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.waw-2{
+  margin-left: 1.5rem;
+}
+
+
 
 .article-container {
   display: flex;
