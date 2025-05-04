@@ -937,8 +937,14 @@ article .icon {
 }
 
 .team-member p {
-  font-size: 1vw;
+  font-size: 1.2vw;
   color: rgb(21, 59, 116);
+}
+
+.member-details p{
+  font-size: 0.6rem;
+  color: rgb(21, 59, 116);
+  font-weight: 100;
 }
 .team-member-row p {
   color: grey;
