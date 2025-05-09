@@ -67,7 +67,7 @@
               src="https://img.icons8.com/material-rounded/24/expand-arrow--v1.png" alt="expand-arrow--v1" /> </a>
           <div class="dropdown-content">
             <a href="./services/service-seminaire.html">Séminaires et formations pratiques</a>
-            <a href="./services/service-advice.html">Accompagnement et conseils</a>
+            <a href="./services/service-advice.html">Conseils et accompagnements</a>
             <a href="./services/service-integration.html">Intégration, implémentation </a>
             <a href="./services/service-fellowship.html">Accompagnement pour la levée de fonds </a>
             <a href="./services/service-wallet.html">Gestion de portefeuille et investissement </a>
@@ -103,7 +103,7 @@
               src="https://img.icons8.com/material-rounded/24/expand-arrow--v1.png" alt="expand-arrow--v1" /> </a>
           <div class="dropdown-content">
             <a href="./services/service-seminaire.html">Séminaires et formations pratiques</a>
-            <a href="./services/service-advice.html">Accompagnement et conseils</a>
+            <a href="./services/service-advice.html">Conseils et accompagnements</a>
             <a href="./services/service-integration.html">Intégration, implémentation </a>
             <a href="./services/service-fellowship.html">Accompagnement pour la levée de fonds </a>
             <a href="./services/service-wallet.html">Gestion de portefeuille et investissement </a>
@@ -171,10 +171,9 @@
               portefeuille et des formations.
               <br><br>
               Nous aspirons à stimuler l’innovation, l’inclusion financière et
-              l’économie circulaire. Cet engagement se lie directement aux
+              la transparence. Cet engagement se lie directement aux
               ODD 8 (Travail décent et croissance économique), 9 (Industrie,
-              innovation et infrastructure) et 10 (Réduction des inégalités),
-              en visant une société plus équitable et un développement durable.
+              innovation et infrastructure) et 10 (Réduction des inégalités).
             </p>
           </div>
           <br>
@@ -192,8 +191,7 @@
           <div>
             <h3>La subversion des anciens modèles économiques par
               les technologies de la blockchain ouvre la voie à la durabilité
-              l’inclusion et transparente.</h3>
-
+              l’inclusion et la transparence.</h3>
             <div class="waw-2-list-row">
               <div class="waw-2-list-item">
                 <div class="waw-list-item-index-box">1</div>
@@ -207,7 +205,7 @@
             <div class="waw-2-list-row">
               <div class="waw-2-list-item">
                 <div class="waw-list-item-index-box">3</div>
-                <p class="waw-2-list-item-text">Durabilité, sécurité et transparence de votre base de donnée</p>
+                <p class="waw-2-list-item-text">Durabilité, sécurité et la transparence de votre base de donnée</p>
               </div>
               <div class="waw-2-list-item">
                 <div class="waw-list-item-index-box">4</div>
@@ -227,11 +225,11 @@
           <div>
             <img class="waw-users-image" src="assets/Users.png"></img>
             <p data-lang="fr">
-              <span>BETA Consulting</span> est une entreprise SAS ayant pour mission de
+              <span>BETA Consulting</span>, branche de AFRO Group est une SAS ayant pour mission de
               vulgariser la blockchain, le Web3 et les monnaies numériques, en accompagnant les entreprises et le grand
-              public dans leur adoption
+              public dans l'adoption
               de ces technologies. L’objectif est de créer un écosystème numérique sécurisé, inclusif et innovant, en
-              collaborant avec les autorités compétentes. À travers des services de conseil, de gestion de
+              collaborant avec les professionnels et les autorités compétentes. À travers des services de conseil, d'accompagnement technique, de gestion de
               portefeuille et des formations.
               <br><br>
               Nous aspirons à stimuler l’innovation, l’inclusion financière et
@@ -275,7 +273,7 @@
           <div data-index="2" class="service-item even">
             <div class="service-item-row">
               <div class="service-item-text-column">
-                <h3>Accompagnement et conseils pour votre transfotmation numérique</h3>
+                <h3>Conseils et accompagnements pour votre transformation numérique</h3>
                 <p>Nous fournissons des orientations stratégiques pour aider les entreprises et organisations à réussir
                   leur transition vers la
                   blockchain. Nous analysons vos besoins spécifiques et....</p>
@@ -360,7 +358,7 @@
           </div>
         </div>
         <div class="member-description">
-          <p>Consultant en monnaies numériques et Blockchain</p>
+          <p>Consultant en Blockchain et Monnaies Numériques</p>
         </div>
       </div>
       <div class="team-member">
@@ -383,7 +381,7 @@
             <p>Partner</p>
           </div>
         </div>
-        <p>Développeur fullstack mobile et expert en web3.</p>
+        <p>Développeur fullstack et Expert en Web3.</p>
       </div>
 
     </div>
@@ -392,8 +390,8 @@
     <div class="footer-box">
       <div class="footer-column left">
         <h3>BETA Consulting</h3>
-        <p><strong>BETA Consulting</strong> est une entreprise SAS ayant pour mission de vulgariser la blockchain, le
-          Web3 et les monnaies numériques, en accompagnant les entreprises et le grand public dans leur adoption de ces
+        <p><strong>BETA Consulting</strong>, branche de AFRO Group est une SAS ayant pour mission de vulgariser la blockchain, le
+          Web3 et les monnaies numériques, en accompagnant les entreprises et le grand public dans l’adoption de ces
           technologies.</p>
       </div>
       <div class="footer-column right">
@@ -424,6 +422,28 @@
     <h1>Blockchain et Investissement au Sénégal</h1>
     <p>Beta Consulting est votre partenaire pour l'adoption de la blockchain, des cryptomonnaies, et des solutions d'investissement à Dakar et en Afrique.</p>
   </div>
+  <script>
+    function switchLanguage() {
+      const selectedLang = document.getElementById('language-select').value || document.getElementById('language-select-mobile').value;
+      const allElements = document.querySelectorAll('[data-lang]');
+
+      // Loop through all elements with data-lang attribute
+      allElements.forEach(el => {
+        // Display elements of selected language, hide others
+        if (el.getAttribute('data-lang') === selectedLang) {
+          el.style.display = '';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+    }
+
+    function toggleMenu() {
+      const menu = document.querySelector('.menu-links');
+      menu.classList.toggle('open');
+    }
+  </script>
+  <script src="scripts/menu-toggle.js"></script>
 </body>
 
 </html>
